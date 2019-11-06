@@ -50,7 +50,7 @@ public class Login extends AppCompatActivity {
     public void checkLogin(View v){
         strUser = edUserName.getText().toString();
         strPass = edPassword.getText().toString();
-
+//mmmm
         if (strUser.isEmpty()||strPass.isEmpty()){
             Toast.makeText(getApplicationContext(),"Tên đăng nhập và mật khẩu không được bỏ trống",
                     Toast.LENGTH_SHORT).show();
