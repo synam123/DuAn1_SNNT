@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PKGlogin.Login">
+<ImageView
+    android:id="@+id/imgview"
+    android:src="@drawable/mainaa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"></ImageView>
+
+    <EditText
+
+        android:drawableStart="@drawable/userx"
+        android:layout_marginTop="22dp"
+        android:textColor="#808080"
+        android:id="@+id/edUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="Tên đăng nhập"
+        android:text="Sy Nam"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:drawableStart="@drawable/key"
+        android:textColor="#808080"
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="123456"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:textColor="#808080"
+        android:id="@+id/chkRememberPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Remember me" />
+    <TextView
+
+        android:layout_margin="5dp"
+        android:textColor="#808080"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2">
+        <Button
+            android:background="@drawable/backgoud_butoon"
+            android:textColor="#CC99FF"
+            android:id="@+id/btnLogin"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:onClick="checkLogin"
+
+            android:text="Login" />
+
+        <Button
+            android:background="@drawable/backgoud_butoon"
+            android:id="@+id/btndangky"
+            android:textColor="#CC99FF"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+
+
+            android:onClick="checkLogin"
+            android:text="Sing Up" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/backgoud_butoon"
+        android:layout_marginTop="20dp"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:text="Or" />
+
+<LinearLayout
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:src="@drawable/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+    <ImageView
+        android:layout_margin="10dp"
+        android:src="@drawable/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+    <ImageView
+        android:layout_margin="10dp"
+        android:src="@drawable/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+    <ImageView
+        android:layout_margin="10dp"
+        android:src="@drawable/zalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+</LinearLayout>
+
+    <Button
+        android:background="@drawable/backgoud_butoon"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:onClick="exit"
+        android:text="Exit" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="11dp"
+            android:textColor="#808080"
+            android:text="Bằng cách đăng ký, bạn đồng ý với"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:textSize="11dp"
+            android:textColor="#FF0000"
+            android:text="Điều Khoản"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></EditText>
+        <TextView
+            android:textSize="11dp"
+            android:textColor="#808080"
+            android:text="và"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:textSize="11dp"
+            android:textColor="#FF0000"
+            android:text="Chính Sách Riêng Tư "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></EditText>
+    </LinearLayout>
+
+</LinearLayout>
